@@ -7,8 +7,8 @@
 
 int main()
 {
-	string str1("fffhhhhsssss");
-	string str2("fafvhhhssstttss");
+	string str1("bbbbbbbbbbbbbjtjtjtjtbbbbbbbbbbbbbbbbbbb");
+	string str2("aaaaaaajtjtjtjtaaaaaaaaaabbbbbbbbbaaaaaaaaaaaa");
 
 	LinesMatching match;
 
