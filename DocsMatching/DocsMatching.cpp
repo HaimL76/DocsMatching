@@ -3,9 +3,18 @@
 
 #include <iostream>
 
+#include "LinesMatching.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	string str1("fffhhhhsssss");
+	string str2("fafvhhhssstttss");
+
+	LinesMatching match;
+
+	MatchResult result;
+
+	int num = match.Match(str1, str2, result);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

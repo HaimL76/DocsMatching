@@ -31,5 +31,13 @@ int Compare(const string& str1, const string& str2, int begin1, int begin2, Matc
 			result.matchCount = counter;
 	}
 
-	return Compare(str1, str2, begin1, )
+	begin1++;
+
+	if (begin1 >= len1)
+		begin2++;
+
+	if (begin2 >= len2)
+		return result.matchCount;
+
+	return Compare(str1, str2, begin1, begin2, result);
 }
