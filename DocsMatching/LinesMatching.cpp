@@ -28,7 +28,11 @@ MatchResult Compare(const string& str1, const string& str2, int begin1, int begi
 					counter++;
 
 				if (counter > result.matchCount)
+				{
 					result.matchCount = counter;
+					result.str1Begin = begin1;
+					result.str2Begin = begin2;
+				}
 			}
 		}
 

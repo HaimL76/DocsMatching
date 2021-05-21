@@ -9,12 +9,15 @@ int main()
 {
 	//string str1("bbbbbbbbbbbbbjtjtjtjtbbbbbbbbbbbbbbbbbbb");
 	//string str2("aaaaaaajtjtjtjtaaaaaaaaaabbbbbbbbbaaaaaaaaaaaa");
-	string str1("aabb");
-	string str2("ccaabd");
+	string str1("dhbvdkfbgygygygygyjujujujujujuytgfdyswtefgyeswy");
+	string str2("akshiauhdgygygykjfidjhfgujujujujujujuskdfbhisdufh");
 
 	LinesMatching match;
 
 	MatchResult result = match.Match(str1, str2);
+
+	if (result.matchCount > 0)
+		cout << str1.substr(result.str1Begin, result.matchCount);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
