@@ -18,14 +18,14 @@ struct MatchResult
 	}
 };
 
-int Compare(const string& str1, const string& str2, int begin1, int begin2, MatchResult& result);
+MatchResult Compare(const string& str1, const string& str2, int begin1, int begin2);
 
 class LinesMatching
 {
 public:
-	int Match(const string& str1, const string& str2, MatchResult& result)
+	MatchResult Match(const string& str1, const string& str2)
 	{
-		return Compare(str1, str2, 0, 0, result);
+		return Compare(str1, str2, 0, 0);
 	}
 };
 

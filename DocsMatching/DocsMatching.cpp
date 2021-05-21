@@ -7,14 +7,14 @@
 
 int main()
 {
-	string str1("bbbbbbbbbbbbbjtjtjtjtbbbbbbbbbbbbbbbbbbb");
-	string str2("aaaaaaajtjtjtjtaaaaaaaaaabbbbbbbbbaaaaaaaaaaaa");
+	//string str1("bbbbbbbbbbbbbjtjtjtjtbbbbbbbbbbbbbbbbbbb");
+	//string str2("aaaaaaajtjtjtjtaaaaaaaaaabbbbbbbbbaaaaaaaaaaaa");
+	string str1("aabb");
+	string str2("ccaabd");
 
 	LinesMatching match;
 
-	MatchResult result;
-
-	int num = match.Match(str1, str2, result);
+	MatchResult result = match.Match(str1, str2);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
